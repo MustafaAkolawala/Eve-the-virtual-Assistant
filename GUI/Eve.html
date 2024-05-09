@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Eve.</title>
+    <link rel="stylesheet" href="Eve.css">
+</head>
+<body>
+    <div class="group">
+        <div class="font">
+            <div class="grpname">
+                <div class="home">Eve.</div>
+                <a href="index.html" class="brev">Home</a>
+                <a href="AboutEve.html" class="brev">About Eve</a>
+                <a href="Contact.html" class="brev">Contact Us</a>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="chat-box" id="chat-box"></div>
+        <div class="input-box">
+            <input type="text" id="user-input" placeholder="Please type your message...">
+            <button id="submit">></button>
+        </div>
+    </div>
+    <script>
+        function date_time()
+        {
+                var n= new Date();
+                d=n.getDate();
+                m=n.getMonth()+1;
+                y=n.getFullYear();
+                document.getElementById("date").innerHTML=d+"/"+m+"/"+y;
+                document.getElementById("time").innerHTML=n.toLocaleTimeString();    
+        }      
+        setInterval(date_time,1000)
+
+    </script>
+</body>
+</html>
